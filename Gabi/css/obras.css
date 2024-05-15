@@ -1,0 +1,96 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/img/_eb55e2b5-cd75-47f9-a6a5-e10eea3e9431.jpeg') center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+img {
+    max-width: 100%; /* Alterado para garantir que as imagens se ajustem ao contêiner */
+    height: auto; /* Adicionado para manter a proporção */
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.artwork {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.artwork:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.poems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.poem {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.poem:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos para telas menores */
+@media only screen and (max-width: 768px) {
+    .album, .poems {
+        margin: 10px; /* Reduzindo a margem para ajustar em telas menores */
+    }
+
+    .poem {
+        width: calc(50% - 20px); /* Alterando a largura para duas colunas em telas menores */
+    }
+}
