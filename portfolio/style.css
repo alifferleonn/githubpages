@@ -287,3 +287,75 @@ footer .line-footer p a{
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;    
+    }
+
+    /* HEADER */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+       width: 100%;
+    }
+
+    /* MINHAS ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre{
+        padding: 55px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}
