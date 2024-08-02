@@ -19,6 +19,13 @@ body{
     display: flex;
 }
 
+button:hover{
+    box-shadow: 0px 0px 8px #72ad74;
+    transform: scale(1.05);
+    transition: .15s;
+}
+
+
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
@@ -29,11 +36,6 @@ body{
     cursor: pointer;
 }
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #72ad74;
-    transform: scale(1.05);
-    transition: .15s;
-}
 
 h2.titulo{
     color: white;
@@ -129,6 +131,7 @@ section.topo-do-site .flex{
 /* Estilo das especialidades */
 section.especialidades{
     padding: 40px 4%;
+    cursor: default;
 }
 
 section.especialidades .flex{
@@ -141,6 +144,7 @@ section.especialidades .flex{
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
+    transition: .2s;
 }
 
 .especialidades .especialidades-box:hover{
@@ -163,3 +167,47 @@ section.especialidades .flex{
 .especialidades .especialidades-box p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 55px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #72ad74;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #72ad74;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
